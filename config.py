@@ -1,17 +1,24 @@
 # Add '/' at the end of dirs' PATHs
-result_path = "Result/"
-bg_path = "Bg/"
-obj_path = "Obj/"
-# Parameters
-ignore_symbol = "!!!!"
-merge = False
-bg_packages = False
-out_of_bounds = False
-count = 1
-distribution = "linear"
-scale_rate = (0.5, 2)
-blur_chance = 0.7
-blur_rate = (0.1, 0.5)
-noise_rate = (0.1, 0.6)
-flip_chance = 0.5
+RESULT_DIR = "Result/"
+BACKGROUND_DIR = "Bg/"
+OBJECTS_DIR = "Obj_cut/"
+IGNORE_FILENAME_SYMBOL = "!!!!"
+MERGE_OUTPUTS = False
+PACKAGE_BY_BACKGROUND = False
+ALLOW_OUT_OF_BOUNDS = True
+OUT_OF_BOUNDS_RANGE = (0.1, 0.4)
+IMAGES_PER_COMBINATION = 1
+OBJECTS_PER_IMAGE_RANGE = (1, 2)
+PLACEMENT_DISTRIBUTION = "gaussian"
+BLUR_TYPE = "bilateralFilter"
+OBJECT_SCALE_RANGE = (0.5, 1.5)
+BLUR_PROBABILITY = 0.7
+BLUR_KERNEL_RANGE = (2 * 0.35, 2 * 0.5)
+BLUR_INTENSITY_RANGE = (20, 70)
+NOISE_TYPE = "gaussian"
+NOISE_LEVEL_RANGE = (0.1, 0.2)
+FLIP_PROBABILITY = 0.5
+# segmentation, classification
+OUTPUT_FORMAT = 'segmentation'
+
 
